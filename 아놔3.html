@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html,
+    body {
+      width: 100%;
+      overflow-x: hidden;
+    }
+
+    .mytitle {
+      width: 300px;
+      height: 200px;
+      background-color: green;
+
+      color: white;
+      text-align: center;
+      border-radius: 8px;
+
+      background-image: url('https://www.ancient-origins.net/sites/default/files/field/image/Agesilaus-II-cover.jpg');
+      background-position: left;
+      background-size: cover;
+    }
+    
+    .container {
+        width: 100px;
+        height: 100px;
+        
+        position: absolute;
+        margin-left: 1400px;
+        margin-top: 200px;
+        
+    }
+
+    .wrap {
+      width: 300px;
+      margin: 20px auto 0px auto;
+    }
+
+    .yellow_outline_btn {
+      background-color: white;
+      width: 80vw;
+      height: 1vh;/
+    }
+
+    .btn {
+      background-color: rgb(255, 255, 255);
+      background-image: url('file:///C:/Users/PC/Downloads/fwe/fwe.html');
+      background-position: center;
+      background-size: cover;
+      border-radius: 8px;
+      border: none;
+    }
+
+    .img.absolute {
+      position: absolute;
+      left: 700px;
+      top: 50px;
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    .content {
+      position: absolute;
+      left: 100px;
+      top: 200px;
+      margin-top: 950px;
+      margin-left: 300px;
+    }
+
+    .contents {
+      position: absolute;
+      left: 60px;
+      top: 100px;
+      margin-top: 1050px;
+    }
+
+    .cts {
+      position: absolute;
+      left: 700px;
+      top: 100px;
+      margin-top: 1050px;
+    }
+
+    .ct {
+      position: absolute;
+      left: 1000px;
+      top: 100px;
+      margin-top: 1050px;
+    }
+
+    .contt {
+      position: absolute;
+      left: 1px;
+      top: 1px;
+      float: left;
+      margin-top: 350px;
+    }
+
+    .cont {
+      position: absolute;
+      left: 300px;
+      top: 1px;
+      margin-top: 350px;
+      object-fit: c
+    }
+
+    .cot {
+      position: absolute;
+      left: 150px;
+      top: 1px;
+      margin-top: 350px;
+      float: left;
+    }
+
+    .cuq {
+      width: 70%;
+      height: 50px;
+      background-color: rgb(255, 255, 255);
+      float: right;
+      position: absolute;
+      left: 1200px;
+      top: 700px;
+      margin-top: 550px;
+    }
+
+    .cu {
+      width: 70%;
+      height: 20px;
+      background-color: rgb(240, 240, 240);
+      float: right;
+      position: absolute;
+      left: 300px;
+      top: 700px;
+      float: center;
+      margin-top: 350px;
+    }
+
+    .cut {
+      width: 70%;
+      height: 50px;
+      background-color: rgb(255, 255, 255);
+      float: left;
+      position: absolute;
+      left: 1px;
+      top: 700px;
+      float: right;
+      margin-top: 350px;
+    }
+
+    div {
+      text-align: center;
+    }
+
+    .jb-wrap {
+      width: 40%;
+      margin: 10px auto;
+      border: 1px solid #ffffff;
+    }
+
+    .jb-wrap img {
+      width: 100%;
+      vertical-align: middle;
+    }
+
+    #div1 {
+      width: 1500px;
+      height: 300px;
+      background-color: #ff0000;
+      float: left;
+      background-image: url('file:///C:/Users/PC/Downloads/FpvhLpeMJq3sdBqdlRUv6QWu1gYvnAmFVmPB5xVPTxZ0y5n-B-Dct4sN5wI_rTzDnquKKBYjO7PhRzIA9hBf6g.webp');
+    }
+
+    .ba {
+      width: 300px;
+      height: 20px;
+      background-color: green;
+      float: right;
+    }
+
+    .nen {
+      position: absolute;
+      left: 0px;
+      top: 100px;
+    }
+
+    .bt {
+
+      background-color: green;
+      text-align: center;
+      float: center;
+      background-position: center;
+      background-repeat: repeat-x;
+      width: 2500px;
+      height: 400px;
+      background-size: cover;
+
+      position: absolute;
+      top: 1500px;
+      float: center;
+      margin-top: 450px;
+      border-bottom: 35px;
+      font-size: 50px;
+      border: 0;
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="div1">aaa</div>
+  <div class="wrap">
+    <div class="mytitle">
+      <h1>스파르타 프라모델몰</h1>
+      <h5>아이디,비밀번호를 입력해주세요</h5>
+    </div>
+    <p>ID: <input type="text" /></p>
+    <p>PW: <input type="text" /></p>
+    <button>로그인하기</button>
+    <button type="button" class="navyBtn"
+      onClick="location.href='file:///C:/Users/PC/Downloads/hello.html/album/index2.htmlfile:///c%3A/Users/PC/Downloads/hello.html/hey.html/%EC%95%84%EB%86%943.html'">등록</button>
+    <div class="yellow_outline_btn">
+    </div>
+  </div>
+  <button type="button" class="btn btn-outline-primary"
+    onClick="location.href='https://gundamboom.com/product/list.html?cate_no=001'">건담프라모델</button>
+  <button type="button" class="btn btn-outline-secondary"
+    onClick="location.href='https://gundamboom.com/product/list.html?cate_no=002'">프라모델</button>
+  <button type="button" class="btn btn-outline-success"
+    onClick="location.href='https://gundamboom.com/product/list.html?cate_no=002'">완성품피규어</button>
+  <button type="button" class="btn btn-outline-danger"
+    onClick="location.href='https://gundamboom.com/product/list.html?cate_no=004'">해외 메이커 피규어</button>
+  <button type="button" class="btn btn-outline-warning"
+    onClick="location.href='https://gundamboom.com/product/list.html?cate_no=005'">아트토이</button>
+  <button type="button" class="btn btn-outline-info"
+    onClick="location.href='https://gundamboom.com/product/list.html?cate_no=006'">도료/공구...</button>
+  <button type="button" class="btn btn-outline-light"
+    onClick="location.href='https://gundamboom.com/product/list.html?cate_no=007'">굿즈</button>
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade" float=":left">
+      <div class="numbertext">1 / 3</div>
+      <img
+        src="file:///C:/Users/PC/Downloads/yC1CBy_PgApI82iBdvVMHOwBmWTHXowQUDtDfMw7cQNhLQ72aAsDUamzixTCru3bGGwKrTjWGVuU1EfMYUsuQQ.webp"
+        style="width:65%">
+      <div class="text">Caption Text</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img
+        src="file:///C:/Users/PC/Downloads/HM_ZJOSCjn779tOQWjnX1rTFHkjmwP1krcOaGMsw4voCEBD6v1to--_vmHhzvPu10eoVT8OXGTqHlUgZduwHkQ.webp"
+        style="width:65%">
+      <div class="text">Caption Two</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img
+        src="file:///C:/Users/PC/Downloads/rNNnIX1Doxnh04UwfjjMb0K3P0vzqF7LRgXvMprD-zEIZ8KzhmcfisbZIsQnp4fq-Hd4kKOjxkSwkuAFXfzZrA.webp"
+        style="width:65%">
+      <div class="text">Caption Three</div>
+    </div>
+    <!-- Next and previousbuttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  <button class="container"><img src="file:///C:/Users/PC/Downloads/444r.webp"width= 300>인기 검색어</button>
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    } 
+  </script>
+
+  <div class="jb-wrap">
+  </div>
+  <div class="cut"><button class="img" type="button">
+      <a href="https://blog.naver.com/gundamboom/220659283447">
+        <img src="file:///C:/Users/PC/Downloads/lol_bottom1.jpg" </div>
+      </a>
+      <div class="cu"><button class="img" type="button">
+          <img src="file:///C:/Users/PC/Downloads/lol_bottom2.jpg" type="button" class="btn btn-outline-primary"
+            onClick="location.href='https://blog.naver.com/gundamboom/223058675235'"></button>
+
+      </div>
+      <div class="content"><button class="img" type="button">
+          <a href="https://blog.naver.com/gundamboom/220659283447">
+            <img
+              src="file:///C:/Users/PC/Downloads/EbMqjq74gHYN3XN6QrmDhbqG0puKCEgLGFR8mZFBnHctnz2H2_M-EbPcvFwojne6krRfcJsw3YLHcdcwTGt_Ag.webp"
+              width="200" height="300"></button>
+        </a>
+        <p class="div">건담 Aerial</p>
+        <button type="button" class="btn btn-outline-primary"
+          onClick="location.href='https://gundamboom.com/product/detail.html?product_no=2514763'"></button>
+      </div>
+      <div class="contents"><button class="img" type="button">
+          <a href="https://gundamboom.com/product/detail.html?product_no=2514763">
+            <img
+              src="file:///C:/Users/PC/Downloads/DLRIMq2hX28ZeFyRWcBY8NH9-pe_dpM-MkqOZdf07f13MxZG1e8MpzOwZ3juyIernyd1wDutDoSP9Kd7cmE2tA.webp"
+              width="200" height="300"></button>
+        </a>
+        <p class="div">RX-78-2 건담(Shinhan Card ver.)</p>
+      </div>
+  </div>
+  <div class="cts"><button class="img" type="button">
+      <a href="https://gundamboom.com/product/detail.html?product_no=819">
+        <img
+          src="file:///C:/Users/PC/Downloads/5WSZo1cMWdUofYj8C922fp0nbGFwbuOZOKx4VmnVe_KiZVzJ5Mg_3ATKoSyeyLahuCZEZi6wZDgWe4pL2iYWPQ.webp"
+          width="200" height="300"></button>
+    </a>
+    <p class="div">[RG 01] 1/144 RX-78-2 퍼스트 건담</p>
+  </div>
+  <div class="ct"><button class="img" type="button">
+      <a href="https://gundamboom.com/product/detail.html?product_no=2523669">
+        <img
+          src="file:///C:/Users/PC/Downloads/u96NvLWva4FV5zeOCcfZcH7XIb9ZFOXwUD_Xm3bGeXNOi1vZl_KgqGS_VA4Fvlgw9OZfzjUoI_JgYISvTUg9hQ.webp"
+          width="200" height="300"></button>
+    </a>
+    <p class="div">오메가몬</p>
+
+  </div>
+  <div class="nen">
+    <img src="file:///C:/Users/PC/Downloads/left1.gif" id="imgObj"
+      style="position:absolute; left:40px; top:400px; cursor:pointer;" draggable="true" alt=""
+      onClick="location.href='https://gundamboom.com/product/list.html?cate_no=003006'"></button>
+    <img src="file:///C:/Users/PC/Downloads/left3.gif" id="imgObj"
+      style="position:absolute; left:40px; top:500px; cursor:pointer;" draggable="true"
+      onClick="location.href='https://gundamboom.com/product/list.html?cate_no=007'"></button>
+    <img src="file:///C:/Users/PC/Downloads/left2.gif" id="imgObj"
+      style="position:absolute; left:40px; top:600px; cursor:pointer;" draggable="true"
+      onClick="location.href='https://gundamboom.com/product/list.html?cate_no=002028'"></button>
+    <img src="file:///C:/Users/PC/Downloads/left4.gif" id="imgObj"
+      style="position:absolute; left:40px; top:700px; cursor:pointer;" draggable="true">
+    <img src="file:///C:/Users/PC/Downloads/left5.gif" id="imgObj"
+      style="position:absolute; left:40px; top:800px; cursor:pointer;" draggable="true">
+  </div>
+</body>
+
+</html>
