@@ -1,0 +1,9 @@
+function solution(num) {
+  var answer = '';
+      if(0 % 2 === 0) {
+          console.log('even')
+      }
+      if(0 % 2 != 0) {
+          console,log('odd')
+      }
+  }
