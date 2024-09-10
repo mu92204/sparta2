@@ -1,0 +1,7 @@
+function solution(x, n) {
+    var answer = [];
+for(let i = 2; i < n; i++) {
+	system.out.print();
+}
+    return answer;
+}
