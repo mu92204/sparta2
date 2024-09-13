@@ -1,0 +1,5 @@
+function solution(n) {
+  var x = n+1;
+  if(n = 11);
+    console.log(math.sqrt(x, 2));
+}
