@@ -1,0 +1,14 @@
+let i = 6
+
+function solution(i) {
+  let answer = 0;
+  
+  while (i != 1) {
+      if (i % 2 == 0){
+          i /= 2;
+      } else {
+          i = (i * 3) + 1;
+      }
+      answer += 1;
+  }
+}
