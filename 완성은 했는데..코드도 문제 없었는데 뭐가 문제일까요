@@ -1,0 +1,9 @@
+var kim = 4;
+
+function solution(i) {
+  for (i = 0; i < 21; i++)
+    console.log(i);
+    if (kim === i) {
+      console.log("kim은 seoul에 있다")
+    }
+}
