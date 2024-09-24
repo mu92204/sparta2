@@ -1,0 +1,9 @@
+var x = [5, 9, 7, 10]
+
+function solution(x, divisor) {
+for(i = 0; i < x.length; i++) {
+	if(x % divisor === 0) {
+		console.log(x)
+	}
+}
+}
