@@ -1,0 +1,11 @@
+let phone_number = "01033334444"
+    
+function solution(phone_number) {
+  Number(phone_number);
+    const len = phone_number.length - 4;
+
+    return "*".repeat(len) + phone_number.substring(len);
+}
+//console.log(phone_number)
+let result = solution(phone_number)
+console.log(result)
