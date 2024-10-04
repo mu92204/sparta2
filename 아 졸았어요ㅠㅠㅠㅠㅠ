@@ -1,0 +1,14 @@
+let left = (13, 17)
+const right = (17, 27)
+
+function solution(left, right) {
+  let answer = 0;
+  for(let i = left; i <= right; i++) {
+    if(Number.isInteger(math.sqrt(i))) {
+      answer -= i
+    } else {
+      answer += i;
+    }
+  }
+  return answer;
+}
