@@ -1,0 +1,16 @@
+let s = "a234"
+    
+function solution(s) {
+    var answer;
+    if(s.length === 4) {
+    console.log = true
+    } else {
+      console.log = false
+    }
+        if(isNaN(s)) {
+        console.log = true
+        } else {
+        console.log = false
+      }
+    return answer;    
+}
