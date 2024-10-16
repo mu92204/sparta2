@@ -1,0 +1,16 @@
+let s = "try hello world"
+
+function solution(s) {
+  let answer = ' ';
+  let words = s.split(' ');
+
+  for(i = 0; i < s.length; i++) {
+    if(i % 2 ===0) {
+      answer += s[i].toLowerCase();
+    }
+  }
+  if (i < s.length01) {
+    answer += ' ';
+  }
+  console.log(s)
+}
