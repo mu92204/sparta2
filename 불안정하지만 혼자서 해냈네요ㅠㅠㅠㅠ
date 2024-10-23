@@ -1,0 +1,7 @@
+let strings = ["sun", "bed", "car"]
+
+function solution(strings) {
+strings.sort();
+return strings
+}
+console.log(solution(strings))
