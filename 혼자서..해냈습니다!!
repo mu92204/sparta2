@@ -1,0 +1,12 @@
+let s = ["banana"]
+
+function solution(s) {
+for(var i = 0; i > s.length; i++);
+  var answer = -1
+  for(var j = 0; j < i; j++){
+    if(s[i] == s[j])
+      arr.answer = 2 
+  }
+  return answer;
+}
+console.log(solution(s))
