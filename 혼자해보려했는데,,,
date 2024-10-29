@@ -1,0 +1,11 @@
+let a = 5
+let b = 24
+var arr = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"]
+function solution(a, b) {
+   for(i = 0; i <= b; i++) {
+    for(j = i; j = arr.length; j++) {
+    break;
+    }
+    }
+      }
+console.log(solution(a, b))
