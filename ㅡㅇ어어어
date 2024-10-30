@@ -1,0 +1,8 @@
+let k = 3
+let m = 4
+
+function solution (k, m) {
+  for(i = 1; i < 4; i++)
+    console.log(i);
+}
+console.log(solution(k, m))
