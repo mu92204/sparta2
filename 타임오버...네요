@@ -1,0 +1,9 @@
+let s = "for the last week"
+
+function solution(s) {
+  let b=s.split(' ').map(e=>{
+      return e.trim().slice(0,1).toUpperCase()+e.trim().slice(1).toLowerCase();
+  });
+  return b.join(' ');
+}
+console.log(solution(s))
