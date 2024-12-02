@@ -1,0 +1,15 @@
+let citations = [3, 0, 6, 1, 5]
+
+function solution(citations) {
+  citations.sort((a, b) => b - a);                 //citations배열의 내립차순 정렬(6, 5, 3, 1, 0)
+  
+  for (let i = 0; i < citations.length; i++) {     //for반복문-i의 반복하면서 조건확인
+    if (citations[i] === i + 1) {
+      return i + 1;                                   //인용 횟수가 i + 1과 같다면 => H-Index
+    } else if (citations[i] < i + 1) {            //현재 논문의 인용 횟수가 i + 1보다 작다면 => H-Index는 i
+      return i;
+    }
+  }
+  return citations.length;
+}
+console.log(solution(citations))
